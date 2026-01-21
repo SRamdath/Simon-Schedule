@@ -103,23 +103,23 @@ MAX_TASKS_WEEKEND = 4
 # =========================
 CONTENT_LIBRARY = {
     "Openings": [
-        "Add your opening resources here",
+        "Add opening resources here",
     ],
     "Middlegames": [
-        "Add your middlegame resources here",
+        "Add middlegame resources here",
     ],
     "Endgames": [
-        "Add your endgame resources here",
+        "Add endgame resources here",
     ],
     "Calculation": [
-        "Add your calculation resources here (puzzle sets, books, themes)",
+        "Addcalculation resources here (Shanky, sheets, books)",
     ],
     "Special topics": [
-        "Add special topics here (prophylaxis, etc.)",
+        "Add special topics here (prophylaxis, rook + knight)",
     ],
     "Student material": [
         "Jaydon lesson notes",
-        "Beginner class worksheets",
+    
     ],
     "Workout content": [
         "Routine A (upper)",
@@ -647,7 +647,7 @@ st.download_button(
 
 st.markdown("---")
 st.markdown("## 📚 Content")
-st.caption("Edit CONTENT_LIBRARY in the code to add/remove items easily.")
+st.caption("Needs to fill.")
 
 for category, items in CONTENT_LIBRARY.items():
     with st.expander(category):
@@ -656,6 +656,7 @@ for category, items in CONTENT_LIBRARY.items():
         else:
             for item in items:
                 st.write("•", item)
+
 
 
 
